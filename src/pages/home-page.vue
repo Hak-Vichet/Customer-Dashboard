@@ -1,9 +1,9 @@
 <template>
     <div>
-      <h3 class="text-2xl font-bold text-left py-2">Home Page</h3>
+      <h3 class="text-2xl font-bold text-left py-2">Purchase List</h3>
       <div class="overflow-x-auto relative  sm:rounded-lg">
         <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400 sm:rounded-lg">
-          <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+          <thead class="text-xs text-gray-700 uppercase bg-gray-700 text-gray-400">
             <tr>
               <th scope="col" class="py-3 px-6">
                 Product name
@@ -39,20 +39,20 @@
           </thead>
           <tbody>
             <tr class="bg-white border-b border-gray-700" v-for="data in productObj" :key="data.id">
-              <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap text-white">
+              <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap text-gray-500">
                 {{ data.name }}
               </th>
-              <td class="py-4 px-6">
+              <td class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap text-gray-500">
                 {{ data.color }}
               </td>
-              <td class="py-4 px-6">
+              <td class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap text-gray-500">
                 {{ data.category }}
               </td>
-              <td class="py-4 px-6">
+              <td class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap text-gray-500">
                 {{ data.price }}
               </td>
               <td class="py-4 px-6 text-right">
-                <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buy</a>
               </td>
             </tr>
           </tbody>
